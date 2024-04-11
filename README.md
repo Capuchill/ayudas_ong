@@ -1,0 +1,1 @@
+![alt text](./src/main/resources/ONG.drawio.png)

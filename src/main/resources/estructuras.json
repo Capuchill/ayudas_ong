@@ -1,0 +1,79 @@
+{
+    "Autorizar": {
+        "metodo": "post",
+        "url": "localhost:8080/authenticate",
+        "data": {
+            "username": "admin@mail.com",
+            "password": "admin"
+        }
+    },
+    "Crear socio": {
+        "metodo": "post",
+        "url": "localhost:8080/api/v1/admin/crear/socio",
+        "data": {
+            "cedula": 1212345,
+            "email": "socio@mail.com",
+            "passWord": "asd123",
+            "p_nombre": "Fabio",
+            "s_nombre": null,
+            "p_apellido": "Patiño",
+            "s_apellido": null,
+            "cuentaBancaria": 123987456,
+            "sede": "sede A",
+            "rol": "assistant"
+        }
+    },
+    "Actualizar socio": {
+        "metodo": "put",
+        "url": "localhost:8080/api/v1/admin/update/socio/1212345",
+        "data": {
+            "email": "socio@mail.com",
+            "p_nombre": "Fabio",
+            "s_nombre": null,
+            "p_apellido": "Patiño",
+            "s_apellido": null,
+            "cuentaBancaria": 123987456
+        }
+    },
+    "Eliminar socio": {
+        "metodo": "delete",
+        "url": "localhost:8080/api/v1/admin/delete/socio/1212345"
+    },
+    "Listar socios por tipo de cuenta": {
+        "metodo": "get",
+        "url": "localhost:8080/api/v1/admin/visualizar/socios/tipo-cuenta/maxima"
+    },
+
+    "Crear sede": {
+        "metodo": "post",
+        "url":"localhost:8080/api/v1/admin/crear/sede",
+        "data": {
+            "nombre": "Sede K",
+            "ciudad": "Medellin",
+            "direccion": "Calle 1 AV 12",
+            "director": 1234567890
+        }
+    },
+    "Actualizar sede": {
+        "metodo": "put",
+        "url": "localhost:8080/api/v1/admin/update/sede/sede-J",
+        "data": {
+            "nombre": "Sede J",
+            "ciudad": "Bello",
+            "direccion": "Calle 21 AV 14",
+            "director": 1234567890
+        }
+    },
+    "Listar sedes": {
+        "metodo": "get",
+        "url": "localhost:8080/api/v1/admin/visualizar/sedes"
+    },
+    "Listar voluntarios por tipo": {
+        "metodo": "get",
+        "url": "localhost:8080/api/v1/admin/visualizar/socios/tipo-cuenta/maxima"
+    }
+
+    
+    
+    
+}
